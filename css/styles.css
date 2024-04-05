@@ -866,8 +866,7 @@ width: calc((100% - 24px)/2);
 /* width: 264px;
 height: 428px; */
 }
-------portfolio--------
-
+------portfolio------
 }
 
 @media screen and (min-width: 1158px) {
@@ -890,7 +889,7 @@ width: calc((100% - 24px*3)/4);
 .advantages-subtitle {
 font-weight: 500;
 font-size: 20px;
-line-height: 120%;
+line-height: 1,2;
 }
 .advantages-item-text {
 font-weight: 400;
