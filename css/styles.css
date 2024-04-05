@@ -290,7 +290,15 @@ font-weight: 500;
 .team {
 background-color: #F4F4FD;
 /* padding: 120px 0; */
-padding: 96px 28px;
+padding-top: 96px;
+padding-bottom: 96px;
+margin: 0 auto;
+}
+
+.container {
+width: 320px;
+padding: 0 16px;
+margin: 0 auto;
 }
 
 .team-title {
@@ -299,11 +307,11 @@ font-size: 36px;
 line-height: 1.11;
 letter-spacing: 0.02em;
 text-align: center;
+margin: 0 auto;
 text-transform: capitalize;
 color: #2e2f42;
 /* padding-top: 120px; */
 /* padding-top: 96px; */
-margin: 0 auto;
 margin-bottom: 72px;
 }
 
@@ -312,13 +320,15 @@ display: flex;
 flex-wrap: wrap;
 /* gap: 24px; */
 gap: 72px;
+align-items: center;
+justify-content: center;
 }
 
 .team-list-item {
 background-color: #FFFFFF;
 /* width: calc((100% - 24px*3) / 4); */
 width: 100%;
-width: 264px;
+/* width: 264px; */
 border-radius: 0px 0px 4px 4px;
 box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 background: #fff;
@@ -346,11 +356,6 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 text-align: center;
 color: #434455;
-}
-
-.team-list-img {
-display: block;
-object-fit: cover;
 }
 
 .soc-net-list {
@@ -386,10 +391,15 @@ background-color: #404bbf;
 .portfolio {
 display: flex;
 margin: 0 auto;
-padding: 120px 0 120px 0;
+/* padding: 120px 0 120px 0; */
+padding-top: 96px;
+padding-bottom: 96px;
 }
 
 .container {
+width: 320px;
+padding: 0 16px;
+margin: 0 auto;
 }
 
 .portfolio-list {
@@ -397,7 +407,7 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 row-gap: 48px;
-column-gap: 24px;
+/* column-gap: 24px; */
 background-color: #FFFFFF;
 }
 
@@ -836,29 +846,33 @@ fill: #f4f4fd;
 .container {
 width: 768px;
 }
+-----advantages-----
+
 .advantages-item {
 width: calc((100% - 24px)/2);
 }
 .advantages-list {
 gap: 72px 24px;
-}___________
-.team {
-padding: 96px 108px;
+}
+------team-------
+.container {
+padding: 0 28px;
 }
 .team-list {
 gap: 64px 24px;
 }
 .team-list-item {
 width: calc((100% - 24px)/2);
-width: 264px;
-height: 428px;
+/* width: 264px;
+height: 428px; */
 }
+------portfolio--------
+
 }
 
 @media screen and (min-width: 1158px) {
 .container {
 width: 1158px;
-
 }
 .advantages {
 padding-top: 120px;
@@ -882,3 +896,13 @@ line-height: 120%;
 font-weight: 400;
 }
 } 
+------------
+.team {
+padding: 120px 0;
+}
+.team-list {
+gap: 24px;
+}
+.team-list-item {
+width: calc((100% - 24px*3) / 4);
+}
