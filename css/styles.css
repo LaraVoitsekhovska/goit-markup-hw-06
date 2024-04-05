@@ -405,10 +405,13 @@ margin: 0 auto;
 .portfolio-list {
 display: flex;
 flex-wrap: wrap;
-justify-content: space-between;
-row-gap: 48px;
+/* justify-content: space-between; */
+gap: 48px;
+/* row-gap: 48px; */
 /* column-gap: 24px; */
 background-color: #FFFFFF;
+align-items: center;
+justify-content: center;
 }
 
 .portfolio-title {
@@ -447,7 +450,8 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .portfolio-list-image {
 background: #fff;
 border-bottom: 1px solid #e7e9fc;
-width: calc((100% - 48px) / 3); 
+/* width: calc((100% - 48px) / 3);  */
+width: 100%;
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -867,6 +871,14 @@ width: 264px;
 height: 428px;
 }
 ------portfolio------
+.portfolio-list {
+gap: 72px 24px;
+}
+.portfolio-list-image {
+width: calc((100% - 24px) / 2);
+width: 356px;
+height: 420px; 
+}
 }
 
 @media screen and (min-width: 1158px) {
@@ -894,7 +906,7 @@ line-height: 1,2;
 .advantages-item-text {
 font-weight: 400;
 }
-------------
+------team------
 .team {
 padding: 120px 0;
 }
@@ -903,5 +915,18 @@ gap: 24px;
 }
 .team-list-item {
 width: calc((100% - 24px*3) / 4);
+}
+----portfolio----
+.portfolio {
+padding-top: 120px;
+padding-bottom: 120px;
+}
+.portfolio-list {
+gap: 48px 24px;
+}
+.portfolio-list-image {
+width: calc((100% - 48px) / 3);
+/* width: 360px;
+height: 420px; */
 }
 }
