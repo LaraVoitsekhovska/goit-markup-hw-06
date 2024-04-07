@@ -1040,6 +1040,7 @@ flex-wrap: wrap;
 }
 .footer-form {
 display: flex;
+flex-direction: row;
 gap: 24px;
 }
 .footer-subscribe {
