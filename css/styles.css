@@ -1036,10 +1036,14 @@ width: calc((100% - 24px)/2);
 .footer-container {
 flex-direction: row;
 gap: 24px;
+flex-wrap: wrap;
 }
 .footer-form {
 display: flex;
 gap: 24px;
+}
+.footer-subscribe {
+margin: 0 auto;
 }
 }
 
