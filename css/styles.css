@@ -685,8 +685,10 @@ pointer-events: auto;
 }
 
 .modal {
-width: 408px;
-min-height: 584px;
+/* width: 408px;
+min-height: 584px; */
+width: 288px;
+min-height: 623px;
 border-radius: 4px;
 background: #fcfcfc;
 position: absolute;
@@ -954,6 +956,10 @@ gap: 24px;
 .footer-subscribe {
 margin: 0 auto;
 }
+.modal {
+width: 408px;
+min-height: 584px;
+}
 }
 
 @media screen and (min-width: 1158px) {
@@ -1072,9 +1078,27 @@ height: 100vh;
 padding: 24px 24px 41px 16px;
 margin-right: 16px;
 background-color: #FFFFFF;
+opacity: 0;
+visibility: hidden;
+pointer-events: none;
 }
 
+.is-open {
+opacity: 1;
+visibility: visible;
+pointer-events: auto;
+
 .mob-open-btn {
+display: block;
+margin-left: auto;
+
+}
+
+.mob-close-btn {
+border-radius: 100%;
+fill: var(--cornflower);
+stroke-width: 1px;
+stroke: var(--navy-blue);
 display: block;
 margin-left: auto;
 margin-bottom: 24px;
@@ -1083,6 +1107,7 @@ margin-bottom: 24px;
 .mob-menu-list {
 display: flex;
 flex-direction: column;
+gap: 40px;
 }
 
 .mob-menu-list-item {
@@ -1092,10 +1117,6 @@ font-size: 36px;
 line-height: 1.11;
 letter-spacing: 0.02em;
 color: var(--navy-blue);
-}
-
-.mob-menu-list-item:not(:lastchild) {
-margin-bottom: 40px;
 }
 
 .mob-menu-address-contacts {
