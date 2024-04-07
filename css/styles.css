@@ -1134,6 +1134,7 @@ padding: 100px 0;
 flex-direction: row;
 align-items: baseline;
 gap: 16px;
+flex-wrap: nowrap;
 }
 .footer-logo-text {
 margin-right: 120px;
@@ -1148,5 +1149,6 @@ margin-left: 80px;
 display: flex;
 flex-direction: row;
 gap: 24px;
+flex-wrap: nowrap;
 }
 }
