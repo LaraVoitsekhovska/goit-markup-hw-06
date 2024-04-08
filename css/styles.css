@@ -1087,6 +1087,7 @@ pointer-events: none;
 opacity: 1;
 visibility: visible;
 pointer-events: auto;
+}
 
 .mob-open-btn {
 display: block;
