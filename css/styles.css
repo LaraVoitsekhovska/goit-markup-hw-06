@@ -886,6 +886,10 @@ fill: #f4f4fd;
 .container {
 width: 768px;
 }
+
+.header-button {
+display: none;
+}
 .header-logo {
 margin-right: 120px;
 }
@@ -954,7 +958,7 @@ flex-direction: row;
 gap: 24px;
 }
 .footer-subscribe {
-margin: 0 auto;
+align-items: end;
 }
 .modal {
 width: 408px;
